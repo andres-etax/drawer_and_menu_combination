@@ -1,4 +1,3 @@
-// import './App.css';
 import TheDrawer from "./components/TheDrawer.js";
 import TheDrawer2 from "./components/TheDrawer2.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
