@@ -9,7 +9,6 @@ import NavigationMenu from "./NavigationMenu";
 //
 // todo: remove blur on the drawer component
 // refactor code
-// push code to git
 
 export default function TheDrawer() {
   const [opened, setOpened] = useState(false);
