@@ -30,7 +30,7 @@ const items = [
 const NavigationMenu = () => {
     return (
         <div>
-            <Menu style={{ width: 256, paddingRight: '5px' }} mode="vertical" items={items} />
+            <Menu style={{ width: 256}} mode="vertical" items={items} />
         </div>
     )
 }

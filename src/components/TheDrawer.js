@@ -15,7 +15,17 @@ export default function TheDrawer() {
   const toggleDrawer = () => setOpened(!opened);
 
   const list = (
-    <Box style={{ position: 'relative', zIndex: 500}} sx={{ width: 250, height: '100%' }} role="presentation">
+    <Box
+      style={{
+        position: "relative",
+        zIndex: 1,
+        // border: "5px solid black",
+        width: "fit-content",
+        height: "100%",
+        backgroundColor: 'pink'
+      }}
+      role="presentation"
+    >
       {/* <List>hello</List>
       <Divider />
       <List>world</List> */}
@@ -28,13 +38,21 @@ export default function TheDrawer() {
       <div
         style={{
           display: "flex",
-          justifyContent: "center"
+          justifyContent: "center",
         }}
       >
         <Button onClick={toggleDrawer}>Open</Button>
       </div>
       <React.Fragment>
-        <Drawer style={{position: 'relative', zIndex: 1}} anchor="left" open={opened} onClose={toggleDrawer}>
+        <Drawer
+          style={{
+            position: "relative", zIndex: 0
+          }}
+          anchor="left"
+          open={opened}
+          onClose={toggleDrawer}
+          // hideBackdrop="true"
+        >
           {list}
         </Drawer>
       </React.Fragment>
