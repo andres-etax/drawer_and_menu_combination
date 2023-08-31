@@ -4,14 +4,14 @@ import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 // import List from "@mui/material/List";
 // import Divider from "@mui/material/Divider";
-import NavigationMenu from "./NavigationMenu";
-// import '../css/drawer1.css'
+import NavigationMenu2 from "./NavigationMenu2";
+// import '../css/drawer2.css'
 
 //
 // todo: remove blur on the drawer component
 // refactor code
 
-export default function TheDrawer() {
+export default function TheDrawer2() {
   const [opened, setOpened] = useState(false);
   const toggleDrawer = () => setOpened(!opened);
 
@@ -30,7 +30,7 @@ export default function TheDrawer() {
       {/* <List>hello</List>
       <Divider />
       <List>world</List> */}
-      <NavigationMenu />
+      <NavigationMenu2 />
     </Box>
   );
 

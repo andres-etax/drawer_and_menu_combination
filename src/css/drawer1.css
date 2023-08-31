@@ -1,0 +1,17 @@
+#navMenu .ant-menu-item {
+  background-color: red;
+
+}
+
+#navMenu .ant-menu-submenu-title {
+  background-color: red;
+
+}
+
+#navMenu-sub2-popup .ant-menu-item {
+  background-color: red;
+}
+
+#navMenu .ant-menu-item-only-child {
+  background-color: red;
+}
