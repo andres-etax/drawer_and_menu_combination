@@ -1,5 +1,4 @@
 import TheDrawer from "./components/TheDrawer.js";
-import TheDrawer2 from "./components/TheDrawer2.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // components used
@@ -37,7 +36,6 @@ export default function App() {
           {/* <Route path="/" element={<Layout />}> */}
             <Route index element={<Home />} />
             <Route path="/thedrawer" element={<TheDrawer />} />
-            <Route path="/thedrawer2" element={<TheDrawer2 />} />
             <Route path="/thedrawer/a" element={<A />} />
             <Route path="/thedrawer/b" element={<B />} />
             <Route path="/thedrawer/c" element={<C />} />

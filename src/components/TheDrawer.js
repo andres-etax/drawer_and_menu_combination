@@ -1,50 +1,51 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import NavigationMenu from "./NavigationMenu";
+import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 
 export default function TheDrawer() {
   const [opened, setOpened] = useState(false);
-  const toggleDrawer = () => setOpened(!opened);
+  const toggleDrawer = () => setOpened((prev) => !prev);
   const [zIndex, setZindex] = useState(0);
-
-  const list = (
-    <Box
-      style={{
-        position: "relative",
-        zIndex: zIndex + 1,
-        width: "fit-content",
-        height: "100%",
-      }}
-      role="presentation"
-    >
-      <NavigationMenu />
-    </Box>
-  );
 
   return (
     <div>
-      <div
+      <nav
         style={{
           display: "flex",
-          justifyContent: "center",
+          // justifyContent: "center",
+          backgroundColor: "gray",
         }}
       >
-        <Button onClick={toggleDrawer}>Open</Button>
-      </div>
+        <DensityMediumIcon id="densityMediumIcon" onClick={toggleDrawer} />
+      </nav>
+
       <Drawer
         style={{
-          boxShadow: "none",
+          // boxShadow: "none !important",
           position: "relative",
           zIndex: zIndex,
         }}
         open={opened}
-        onClose={toggleDrawer}
+        // onClose={toggleDrawer}
         hideBackdrop={true}
       >
-        {list}
-        <button>Help</button>
+        <Box
+          style={{
+            position: "relative",
+            zIndex: zIndex + 1,
+            width: "fit-content",
+          }}
+          role="presentation"
+        >
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            {/* <img></img> */}
+            <h1>eTaxCentral</h1>
+            <button onClick={toggleDrawer}>x</button>
+          </div>
+          <NavigationMenu />
+        </Box>
       </Drawer>
     </div>
   );

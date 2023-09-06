@@ -1,23 +1,29 @@
 #navMenu .ant-menu-item:hover {
   background-color: lightgray;
-
 }
 
 #navMenu .ant-menu-submenu-title:hover {
   background-color: lightgray;
-
-
-
 }
 
 #navMenu-sub2-popup .ant-menu-item:hover {
   background-color: lightgray;
-
-
 }
 
 #navMenu .ant-menu-item-only-child:hover {
   background-color: lightgray;
+}
 
-  
+#densityMediumIcon {
+  padding: 5px;
+  cursor: pointer;
+}
+#densityMediumIcon:hover {
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.MuiPaper-root{
+  box-shadow: none !important;
+  border-right: 0.5px solid gray;
 }
