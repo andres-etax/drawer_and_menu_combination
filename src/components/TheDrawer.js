@@ -4,10 +4,8 @@ import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 // import List from "@mui/material/List";
 // import Divider from "@mui/material/Divider";
-import NavigationMenu from "./NavigationMenu";
-// import '../css/drawer1.css'
 
-//
+import NavigationMenu from "./NavigationMenu";
 // todo: remove blur on the drawer component
 // refactor code
 
@@ -47,6 +45,7 @@ export default function TheDrawer() {
       <React.Fragment>
         <Drawer
           style={{
+            boxShadow: 'none',
             position: "relative",
             // zIndex: 0,
           }}

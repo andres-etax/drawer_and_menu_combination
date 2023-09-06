@@ -19,6 +19,19 @@ function Layout() {
   return <div>Layout</div>;
 }
 
+function A() {
+  return <div>A</div>;
+
+}
+function B() {
+  return <div>B</div>;
+
+}
+function C() {
+  return <div>C</div>;
+
+}
+
 export default function App() {
   return (
     <div>
@@ -30,6 +43,11 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="/thedrawer" element={<TheDrawer />} />
             <Route path="/thedrawer2" element={<TheDrawer2 />} />
+            <Route path="/thedrawer/a" element={<A />} />
+            <Route path="/thedrawer/b" element={<B />} />
+            <Route path="/thedrawer/c" element={<C />} />
+
+
           {/* </Route> */}
         </Routes>
       </BrowserRouter>

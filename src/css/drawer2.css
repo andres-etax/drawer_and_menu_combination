@@ -1,18 +1,18 @@
-#navMenu2 .ant-menu-item {
+#navMenu2 .ant-menu-item:hover {
   background-color: green;
 
 }
 
-#navMenu2 .ant-menu-submenu-title {
+#navMenu2 .ant-menu-submenu-title:hover {
   background-color: green;
 
 }
 
-#navMenu2-sub2-popup .ant-menu-item {
+#navMenu2-sub2-popup .ant-menu-item:hover {
   background-color: green;
 }
 
 
-#navMenu2 .ant-menu-item-only-child {
+#navMenu2 .ant-menu-item-only-child:hover {
   background-color: green;
 }
