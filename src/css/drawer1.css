@@ -27,3 +27,13 @@
   box-shadow: none !important;
   border-right: 0.5px solid gray;
 }
+
+
+#closeIcon {
+  padding: 5px;
+  cursor: pointer;
+}
+#closeIcon:hover {
+  background-color: lightgray;
+  border-radius: 50%;
+}

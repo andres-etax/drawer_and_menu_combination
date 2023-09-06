@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import NavigationMenu from "./NavigationMenu";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function TheDrawer() {
   const [opened, setOpened] = useState(false);
@@ -14,7 +15,6 @@ export default function TheDrawer() {
       <nav
         style={{
           display: "flex",
-          // justifyContent: "center",
           backgroundColor: "gray",
         }}
       >
@@ -23,12 +23,10 @@ export default function TheDrawer() {
 
       <Drawer
         style={{
-          // boxShadow: "none !important",
           position: "relative",
           zIndex: zIndex,
         }}
         open={opened}
-        // onClose={toggleDrawer}
         hideBackdrop={true}
       >
         <Box
@@ -39,10 +37,9 @@ export default function TheDrawer() {
           }}
           role="presentation"
         >
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-            {/* <img></img> */}
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: 'center' }}>
             <h1>eTaxCentral</h1>
-            <button onClick={toggleDrawer}>x</button>
+            <CloseIcon id="closeIcon" onClick={toggleDrawer} />
           </div>
           <NavigationMenu />
         </Box>
