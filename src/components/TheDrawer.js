@@ -37,7 +37,13 @@ export default function TheDrawer() {
           }}
           role="presentation"
         >
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: 'center' }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
             <h1>eTaxCentral</h1>
             <CloseIcon id="closeIcon" onClick={toggleDrawer} />
           </div>
