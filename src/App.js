@@ -2,14 +2,9 @@ import TheDrawer from "./components/TheDrawer.js";
 import TheDrawer2 from "./components/TheDrawer2.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
 // components used
 // drawer component from material UI
 // menu component from ant design
-
-// remove shadow
-// remove pink background, we want white
-// look into routing within the navigation menu
 
 function Home() {
   return <div>Home</div>;
@@ -46,8 +41,6 @@ export default function App() {
             <Route path="/thedrawer/a" element={<A />} />
             <Route path="/thedrawer/b" element={<B />} />
             <Route path="/thedrawer/c" element={<C />} />
-
-
           {/* </Route> */}
         </Routes>
       </BrowserRouter>

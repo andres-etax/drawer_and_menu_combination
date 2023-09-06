@@ -1,39 +1,23 @@
 #navMenu .ant-menu-item:hover {
-  background-color: red;
+  background-color: lightgray;
 
 }
 
 #navMenu .ant-menu-submenu-title:hover {
-  background-color: red;
+  background-color: lightgray;
+
+
 
 }
 
 #navMenu-sub2-popup .ant-menu-item:hover {
-  background-color: red;
+  background-color: lightgray;
+
+
 }
 
 #navMenu .ant-menu-item-only-child:hover {
-  background-color: red;
+  background-color: lightgray;
+
+  
 }
-/* .MuiDrawer-paperAnchorLeft {
-  box-shadow: none;
-
-} */
-
-
-/* .MuiDrawer-paper{
-  box-shadow: none;
-  border: 5px solid red;
-  background-color: blue;
-  box-shadow: none;
-
-}
-
-.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
-  box-shadow: none;
-}
-
-.MuiPaper-root .MuiPaper-elevation .MuiPaper-elevation16 .MuiDrawer-paper .MuiDrawer-paperAnchorLeft .css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
-  box-shadow: none;
-
-} */
