@@ -8,7 +8,7 @@ import CloseIcon from "@mui/icons-material/Close";
 export default function TheDrawer() {
   const [opened, setOpened] = useState(false);
   const toggleDrawer = () => setOpened((prev) => !prev);
-  const [zIndex, setZindex] = useState(0);
+  const [index, setIndex] = useState(0);
 
   return (
     <div>
@@ -16,6 +16,8 @@ export default function TheDrawer() {
         style={{
           display: "flex",
           backgroundColor: "gray",
+          padding: '5px'
+        
         }}
       >
         <DensityMediumIcon id="densityMediumIcon" onClick={toggleDrawer} />
@@ -24,7 +26,8 @@ export default function TheDrawer() {
       <Drawer
         style={{
           position: "relative",
-          zIndex: zIndex,
+          zIndex: index,
+          
         }}
         open={opened}
         hideBackdrop={true}
@@ -32,8 +35,8 @@ export default function TheDrawer() {
         <Box
           style={{
             position: "relative",
-            zIndex: zIndex + 1,
-            width: "fit-content",
+            zIndex: index + 1,
+            width: "fit-content"
           }}
           role="presentation"
         >
@@ -41,13 +44,17 @@ export default function TheDrawer() {
             style={{
               display: "flex",
               justifyContent: "space-between",
+              gap: '80px',
               alignItems: "center",
+              padding: "20px"
             }}
           >
-            <h1>eTaxCentral</h1>
+            <h1>View Comparison Tool</h1>
             <CloseIcon id="closeIcon" onClick={toggleDrawer} />
           </div>
+          <hr/>
           <NavigationMenu />
+
         </Box>
       </Drawer>
     </div>

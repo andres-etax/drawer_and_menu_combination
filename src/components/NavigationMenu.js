@@ -56,7 +56,7 @@ const items = [
 const NavigationMenu = () => {
   return (
     <div>
-      <Menu id="navMenu" style={{ width: 256 }} mode="vertical" items={items} />
+      <Menu id="navMenu" mode="vertical" items={items} />
     </div>
   );
 };

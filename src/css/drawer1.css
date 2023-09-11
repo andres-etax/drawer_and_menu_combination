@@ -1,39 +1,58 @@
 #navMenu .ant-menu-item:hover {
-  background-color: lightgray;
+  background-color: rgb(236, 236, 236);
 }
 
 #navMenu .ant-menu-submenu-title:hover {
-  background-color: lightgray;
+  background-color: rgb(236, 236, 236);
 }
 
 #navMenu-sub2-popup .ant-menu-item:hover {
-  background-color: lightgray;
+  background-color: rgb(236, 236, 236);
 }
 
 #navMenu .ant-menu-item-only-child:hover {
-  background-color: lightgray;
+  background-color: rgb(236, 236, 236);
+}
+
+#navMenu {
+  border-inline-end: none;
 }
 
 #densityMediumIcon {
   padding: 5px;
   cursor: pointer;
+  border-radius: 5px;
 }
 #densityMediumIcon:hover {
-  background-color: lightgray;
-  border-radius: 50%;
+  background-color: rgb(236, 236, 236);
 }
 
-.MuiPaper-root{
+.MuiPaper-root {
   box-shadow: none !important;
   border-right: 0.5px solid gray;
+  border-radius: 0px 10px 10px 0px;
 }
 
+#navMenu-sub2-popup {
+  border: 1px solid black;
+  box-shadow: none;
+}
 
 #closeIcon {
   padding: 5px;
+  border-radius: 5px;
   cursor: pointer;
 }
+
 #closeIcon:hover {
   background-color: lightgray;
-  border-radius: 50%;
+  background-color: rgb(236, 236, 236);
+}
+
+h1 {
+  all: unset;
+}
+
+hr {
+  color: rgb(236, 236, 236);
 }
