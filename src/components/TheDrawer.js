@@ -50,7 +50,7 @@ export default function TheDrawer() {
                 justifyContent: "space-between",
                 gap: "80px",
                 alignItems: "center",
-                padding: "20px",
+                padding: "10px",
               }}
             >
               <h1>View Comparison Tool</h1>
