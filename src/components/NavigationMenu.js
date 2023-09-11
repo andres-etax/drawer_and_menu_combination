@@ -5,7 +5,6 @@ import {
   SettingOutlined,
 } from "@ant-design/icons";
 import { Menu } from "antd";
-import "../css/drawer1.css";
 import { Link } from "react-router-dom";
 
 function getItem(label, key, icon, children, type) {

@@ -1,3 +1,6 @@
+#navMenu {
+  border-inline-end: none;
+}
 #navMenu .ant-menu-item:hover {
   background-color: rgb(236, 236, 236);
 }
@@ -12,10 +15,6 @@
 
 #navMenu .ant-menu-item-only-child:hover {
   background-color: rgb(236, 236, 236);
-}
-
-#navMenu {
-  border-inline-end: none;
 }
 
 #densityMediumIcon {
@@ -45,14 +44,16 @@
 }
 
 #closeIcon:hover {
-  background-color: lightgray;
   background-color: rgb(236, 236, 236);
 }
 
-h1 {
+h1,
+p {
   all: unset;
 }
 
 hr {
   color: rgb(236, 236, 236);
+  margin-left: 10px;
+  margin-right: 10px;
 }

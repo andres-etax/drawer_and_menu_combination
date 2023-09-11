@@ -4,6 +4,7 @@ import Drawer from "@mui/material/Drawer";
 import NavigationMenu from "./NavigationMenu";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import CloseIcon from "@mui/icons-material/Close";
+import "../css/drawer.css";
 
 export default function TheDrawer() {
   const [opened, setOpened] = useState(false);
@@ -16,8 +17,7 @@ export default function TheDrawer() {
         style={{
           display: "flex",
           backgroundColor: "gray",
-          padding: '5px'
-        
+          padding: "5px",
         }}
       >
         <DensityMediumIcon id="densityMediumIcon" onClick={toggleDrawer} />
@@ -27,7 +27,6 @@ export default function TheDrawer() {
         style={{
           position: "relative",
           zIndex: index,
-          
         }}
         open={opened}
         hideBackdrop={true}
@@ -36,25 +35,37 @@ export default function TheDrawer() {
           style={{
             position: "relative",
             zIndex: index + 1,
-            width: "fit-content"
+            width: "fit-content",
+            height: "100%",
+            display: "flex",
+            flexDirection: 'column',
+            justifyContent: "space-between",
           }}
           role="presentation"
         >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              gap: '80px',
-              alignItems: "center",
-              padding: "20px"
-            }}
-          >
-            <h1>View Comparison Tool</h1>
-            <CloseIcon id="closeIcon" onClick={toggleDrawer} />
+          <div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                gap: "80px",
+                alignItems: "center",
+                padding: "20px",
+              }}
+            >
+              <h1>View Comparison Tool</h1>
+              <CloseIcon id="closeIcon" onClick={toggleDrawer} />
+            </div>
+            <hr></hr>
+            <NavigationMenu />
           </div>
-          <hr/>
-          <NavigationMenu />
+          <div>
+            <hr></hr>
+            <div style={{padding: '10px'}}>
 
+            <p>© 2023 eTax, Inc.</p>
+            </div>
+          </div>
         </Box>
       </Drawer>
     </div>
