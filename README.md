@@ -1,6 +1,7 @@
 Navigation component created for eTax's internal tools
 
-![screenshot]
+Screenshot:
+![screenshot](./Capture1.PNG)
 
 ### `npm start`
 
